@@ -1,0 +1,48 @@
+model:
+  arch: pretrain
+  load_finetuned: False
+  pretrained: "/data/lj/TME_v1/weight/blip2_pretrained.pth"
+  finetuned: ""
+
+  # ViT
+  image_size: 224
+  drop_path_rate: 0
+  use_grad_checkpoint: False
+  vit_precision: "fp16"
+  freeze_vit: True
+
+  # Q-Former
+  num_query_token: 32
+  cross_attention_freq: 2
+  embed_dim: 256
+  max_txt_len: 32
+
+  # Graph selector
+  selector_hidden_dim: 512
+  selector_top_k: 32
+  selector_dropout: 0.1
+
+  # Token fusion
+  fusion_num_heads: 4
+  fusion_dropout: 0.1
+
+  # Aux head
+  aux_head_num_heads: 4
+  lambda_aux: 0.3
+
+  # FFT
+  fft_band_edges: "0,0.15,0.35,0.6,1.01"
+
+preprocess:
+    vis_processor:
+        train:
+          name: "blip_image_train"
+          image_size: 224
+        eval:
+          name: "blip_image_eval"
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption"
+        eval:
+          name: "blip_caption"
