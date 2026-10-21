@@ -1,0 +1,267 @@
+2026-07-09 14:27:58,251 device=cuda:0 experiments=['action', 'shortcut', 'size']
+2026-07-09 14:27:58,816 [object_core] injected test (6684/6684)
+2026-07-09 14:27:58,817 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 14:28:06,852 Loaded 1947 image features.
+2026-07-09 14:28:33,023 ViT frozen.
+2026-07-09 14:28:38,130 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 14:28:41,537 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 14:28:41,580 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 14:29:00,048 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 14:36:02,231 
+2026-07-09 14:36:02,232 ==== Reference dependence / text-only shortcut ====
+2026-07-09 14:36:02,232 tag                    R@1     R@5    R@10    R@50    GS@1    GS@2    GS@3
+2026-07-09 14:36:02,232 full                 29.74   61.62   75.10   96.29   66.23   85.47   93.66
+2026-07-09 14:36:02,232 text_only             8.26   21.60   29.98   51.47   52.45   71.04   82.97
+2026-07-09 14:36:02,232 ref_only              7.39   23.56   36.76   76.86   20.42   40.75   60.80
+2026-07-09 14:36:02,233 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/shortcut_CustomCIRR_test.json
+2026-07-09 14:45:29,037 
+2026-07-09 14:45:29,038 ==== FOE object-size buckets ====
+2026-07-09 14:45:29,038 small   n=1758  Full GS@1=64.33 R@1=28.44 | w/o FOE GS@1=59.16 R@1=25.43 | delta GS@1=+5.18 R@1=+3.01
+2026-07-09 14:45:29,038 medium  n=1758  Full GS@1=61.60 R@1=25.88 | w/o FOE GS@1=55.80 R@1=21.67 | delta GS@1=+5.80 R@1=+4.21
+2026-07-09 14:45:29,038 large   n=1758  Full GS@1=72.70 R@1=34.36 | w/o FOE GS@1=64.68 R@1=28.56 | delta GS@1=+8.02 R@1=+5.80
+2026-07-09 14:45:29,106 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 14:56:29,586 
+2026-07-09 14:56:29,586 ==== Action perturbation ====
+2026-07-09 14:56:29,587 tag                    R@1     R@5    R@10    R@50    GS@1    GS@2    GS@3
+2026-07-09 14:56:29,587 full                 29.74   61.62   75.10   96.29   66.23   85.47   93.66
+2026-07-09 14:56:29,587 action_replace       30.09   61.22   74.37   96.26   66.26   85.17   93.33
+2026-07-09 14:56:29,587 action_shuffle       30.06   61.58   75.15   96.26   66.28   85.19   93.54
+2026-07-09 14:56:29,588 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/action_perturb_CustomCIRR_test.json
+2026-07-09 14:56:29,588 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 15:18:06,148 device=cuda:0 experiments=['size']
+2026-07-09 15:18:06,673 [object_core] injected test (6684/6684)
+2026-07-09 15:18:06,673 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 15:18:08,474 Loaded 1947 image features.
+2026-07-09 15:18:30,425 ViT frozen.
+2026-07-09 15:18:33,948 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 15:18:34,960 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 15:18:35,004 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 15:18:39,162 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 15:33:34,212 
+2026-07-09 15:33:34,213 ==== FOE object-size buckets ====
+2026-07-09 15:33:34,213 size rule: mode=hard, mask_th=0.500, small<0.100, medium<0.300, large>=0.300
+2026-07-09 15:33:34,213 small   n=2378  Full GS@1=63.92 R@1=27.59 | w/o FOE GS@1=58.70 R@1=23.84 | delta GS@1=+5.21 R@1=+3.74
+2026-07-09 15:33:34,214 medium  n=2035  Full GS@1=65.31 R@1=28.35 | w/o FOE GS@1=58.87 R@1=24.62 | delta GS@1=+6.44 R@1=+3.73
+2026-07-09 15:33:34,214 large   n= 861  Full GS@1=74.68 R@1=37.86 | w/o FOE GS@1=65.51 R@1=30.43 | delta GS@1=+9.18 R@1=+7.43
+2026-07-09 15:33:34,346 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 15:33:34,347 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 15:37:52,668 device=cuda:0 experiments=['action']
+2026-07-09 15:37:53,237 [object_core] injected test (6684/6684)
+2026-07-09 15:37:53,237 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 15:37:55,067 Loaded 1947 image features.
+2026-07-09 15:38:16,594 ViT frozen.
+2026-07-09 15:38:19,704 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 15:38:20,697 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 15:38:20,739 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 15:38:25,209 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 15:55:10,930 
+2026-07-09 15:55:10,931 ==== Action perturbation ====
+2026-07-09 15:55:10,932 tag                    R@1     R@5    R@10    R@50    GS@1    GS@2    GS@3
+2026-07-09 15:55:10,932 full                 29.74   61.62   75.10   96.29   66.23   85.47   93.66
+2026-07-09 15:55:10,932 action_add_remove_swap   29.86   61.19   74.42   96.29   66.16   85.20   93.42
+2026-07-09 15:55:10,932 action_shuffle       30.06   61.58   75.15   96.26   66.28   85.19   93.54
+2026-07-09 15:55:10,932 
+2026-07-09 15:55:10,933 ==== Add/Remove causal subset ====
+2026-07-09 15:55:10,933 subset n=5456 | full GS@1=67.72 R@1=30.90 | Add<->Remove swap GS@1=67.63 R@1=31.05 | delta GS@1=-0.09 R@1=+0.15
+2026-07-09 15:55:10,936 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/action_perturb_CustomCIRR_test.json
+2026-07-09 15:55:10,938 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 16:11:11,908 device=cuda:0 experiments=['size']
+2026-07-09 16:11:12,863 [object_core] injected test (6684/6684)
+2026-07-09 16:11:12,864 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 16:11:28,750 Loaded 1947 image features.
+2026-07-09 16:11:30,073 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: ebe97515-6e97-430d-8c91-6c24b548fc3d)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:11:30,073 Retrying in 1s [Retry 1/5].
+2026-07-09 16:11:32,374 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 8bbec30d-1eb9-4ceb-95bf-8db3efce81f0)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:11:32,375 Retrying in 2s [Retry 2/5].
+2026-07-09 16:11:35,625 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 09b13d84-6b14-44d0-9b3f-c6498f99e43a)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:11:35,625 Retrying in 4s [Retry 3/5].
+2026-07-09 16:11:41,248 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 800aa0fc-586b-467f-80a9-f3a88d1ed124)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:11:41,248 Retrying in 8s [Retry 4/5].
+2026-07-09 16:11:50,647 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 35b79de1-5ecb-4921-a5d2-48a609831527)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:11:50,648 Retrying in 8s [Retry 5/5].
+2026-07-09 16:11:59,945 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 1268bcb2-88b2-4a08-9842-1e668e47080e)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:12:52,336 device=cuda:0 experiments=['size']
+2026-07-09 16:12:53,081 [object_core] injected test (6684/6684)
+2026-07-09 16:12:53,081 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 16:12:55,459 Loaded 1947 image features.
+2026-07-09 16:13:47,385 ViT frozen.
+2026-07-09 16:13:53,392 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 16:13:59,056 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 16:13:59,136 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 16:14:22,053 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 16:16:13,035 device=cuda:0 experiments=['action']
+2026-07-09 16:16:13,738 [object_core] injected test (6684/6684)
+2026-07-09 16:16:13,738 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 16:16:16,108 Loaded 1947 image features.
+2026-07-09 16:16:17,421 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 2faa191b-2e74-401b-9f82-e9fefa80ead8)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:16:17,421 Retrying in 1s [Retry 1/5].
+2026-07-09 16:16:20,869 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: cd0f56bc-1df0-4684-b138-5413ed0d0ffc)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:16:20,870 Retrying in 2s [Retry 2/5].
+2026-07-09 16:16:24,177 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 94b0675f-274b-4064-bc00-a4c83b4daa9e)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:16:24,177 Retrying in 4s [Retry 3/5].
+2026-07-09 16:16:29,369 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 225d41bd-8ab0-4df2-8981-0fdd2a3dbc5d)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:16:29,369 Retrying in 8s [Retry 4/5].
+2026-07-09 16:16:38,576 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 44086af1-88d2-41b0-809d-16abec13f987)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:16:38,576 Retrying in 8s [Retry 5/5].
+2026-07-09 16:16:47,832 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 1c116b8c-96c6-4720-a741-c37a667c8db9)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:19:16,671 device=cuda:0 experiments=['action']
+2026-07-09 16:19:17,391 [object_core] injected test (6684/6684)
+2026-07-09 16:19:17,392 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 16:19:19,683 Loaded 1947 image features.
+2026-07-09 16:20:08,162 ViT frozen.
+2026-07-09 16:20:12,708 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 16:20:16,003 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 16:20:16,075 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 16:20:23,515 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 16:21:15,273 
+2026-07-09 16:21:15,274 ==== FOE object-size buckets ====
+2026-07-09 16:21:15,274 size rule: area_mode=hard, bucket_mode=extreme, mask_th=0.500, small<0.400, large>=0.700
+2026-07-09 16:21:15,274 small   n=4741  Full GS@1=65.30 R@1=28.94 | w/o FOE GS@1=59.40 R@1=24.85 | delta GS@1=+5.91 R@1=+4.09
+2026-07-09 16:21:15,275 large   n= 131  Full GS@1=64.89 R@1=23.66 | w/o FOE GS@1=59.54 R@1=22.90 | delta GS@1=+5.34 R@1=+0.76
+2026-07-09 16:21:15,438 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 16:21:15,440 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 16:26:35,295 
+2026-07-09 16:26:35,297 ==== Action perturbation on changed Add/Remove subset ====
+2026-07-09 16:26:35,297 subset n=5456
+2026-07-09 16:26:35,297 tag                          R@1     R@5    R@10    R@50    GS@1    GS@2    GS@3
+2026-07-09 16:26:36,577 full                       30.90   62.26   75.75   96.33   67.72   86.20   93.97
+2026-07-09 16:26:37,899 action_add_remove_swap     31.05   61.73   74.91   96.33   67.63   85.87   93.68
+2026-07-09 16:26:39,219 action_shuffle             30.98   62.26   75.73   96.30   67.72   86.02   93.86
+2026-07-09 16:26:39,220 
+2026-07-09 16:26:39,220 ==== Add/Remove swap delta ====
+2026-07-09 16:26:39,220 subset n=5456 | full GS@1=67.72 R@1=30.90 | Add<->Remove swap GS@1=67.63 R@1=31.05 | delta GS@1=-0.09 R@1=+0.15
+2026-07-09 16:26:39,222 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/action_perturb_CustomCIRR_test.json
+2026-07-09 16:26:39,224 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 16:33:01,164 device=cuda:0 experiments=['size']
+2026-07-09 16:33:01,735 [object_core] injected test (6684/6684)
+2026-07-09 16:33:01,735 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 16:33:04,156 Loaded 1947 image features.
+2026-07-09 16:33:05,381 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 2bf50b4c-11dd-4a11-b1b7-368ee9f40606)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:33:05,382 Retrying in 1s [Retry 1/5].
+2026-07-09 16:33:09,695 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 59832b4b-4078-4589-b45e-4dfa1bf7a1d2)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:33:09,695 Retrying in 2s [Retry 2/5].
+2026-07-09 16:33:13,010 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: d6128bf9-c201-478b-ad6c-c21ae6ae1558)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:33:13,010 Retrying in 4s [Retry 3/5].
+2026-07-09 16:33:19,751 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: e915a794-74a7-4e01-8b7e-8cb016134a09)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:33:19,752 Retrying in 8s [Retry 4/5].
+2026-07-09 16:33:29,321 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: f4a14691-e07f-4229-8f38-d39c12679f79)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:33:29,322 Retrying in 8s [Retry 5/5].
+2026-07-09 16:33:38,621 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 7c2b0a9e-9cf5-45d0-83fc-7e22116a0ea2)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:43:03,017 device=cuda:0 experiments=['size']
+2026-07-09 16:43:03,571 [object_core] injected test (6684/6684)
+2026-07-09 16:43:03,571 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 16:43:05,592 Loaded 1947 image features.
+2026-07-09 16:43:06,784 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 24e001a6-10a0-40e6-9fb5-d520c6e62650)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:43:06,784 Retrying in 1s [Retry 1/5].
+2026-07-09 16:43:09,920 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 8da8b3cd-ece7-418e-a546-c0015ad0e29c)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:43:09,921 Retrying in 2s [Retry 2/5].
+2026-07-09 16:43:13,101 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 0d943758-c69c-4c6b-88a5-1ae7a3ebdb97)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:43:13,102 Retrying in 4s [Retry 3/5].
+2026-07-09 16:43:18,373 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 2e69cf77-e518-4007-8662-696e1fd79b36)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:43:18,374 Retrying in 8s [Retry 4/5].
+2026-07-09 16:43:48,858 ViT frozen.
+2026-07-09 16:43:53,029 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 16:43:53,970 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 16:43:54,014 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 16:43:58,850 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 16:52:05,087 
+2026-07-09 16:52:05,088 ==== FOE object-size buckets ====
+2026-07-09 16:52:05,088 size rule: area_mode=hard, bucket_mode=extreme, mask_th=0.500, small<0.400, large>=0.600
+2026-07-09 16:52:05,088 small   n=4741  Full GS@1=65.30 R@1=28.94 | w/o FOE GS@1=59.40 R@1=24.85 | delta GS@1=+5.91 R@1=+4.09
+2026-07-09 16:52:05,088 large   n= 199  Full GS@1=67.34 R@1=27.64 | w/o FOE GS@1=58.29 R@1=24.12 | delta GS@1=+9.05 R@1=+3.52
+2026-07-09 16:52:05,212 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 16:52:05,213 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 16:54:01,166 device=cuda:0 experiments=['size']
+2026-07-09 16:54:01,688 [object_core] injected test (6684/6684)
+2026-07-09 16:54:01,689 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 16:54:03,505 Loaded 1947 image features.
+2026-07-09 16:54:11,168 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: d4a4e248-8afc-42e7-ab63-c46f953ac1e4)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:54:11,168 Retrying in 1s [Retry 1/5].
+2026-07-09 16:54:14,537 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 1a82ce83-59fd-4049-8a21-c10408b59597)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:54:14,538 Retrying in 2s [Retry 2/5].
+2026-07-09 16:54:17,869 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: cd99fe31-e5e7-4c3e-b1de-24000cf95008)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:54:17,869 Retrying in 4s [Retry 3/5].
+2026-07-09 16:54:23,164 '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: a85780ff-bc66-4057-8c8d-939d41dfbfd9)')' thrown while requesting HEAD https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json
+2026-07-09 16:54:23,165 Retrying in 8s [Retry 4/5].
+2026-07-09 16:54:52,887 ViT frozen.
+2026-07-09 16:54:58,201 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 16:54:59,141 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 16:54:59,186 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 16:55:03,204 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 17:03:06,784 
+2026-07-09 17:03:06,822 ==== FOE object-size buckets ====
+2026-07-09 17:03:06,823 size rule: area_mode=hard, bucket_mode=extreme, mask_th=0.500, small<0.600, large>=0.650
+2026-07-09 17:03:06,823 small   n=5075  Full GS@1=66.17 R@1=29.64 | w/o FOE GS@1=59.94 R@1=25.26 | delta GS@1=+6.23 R@1=+4.37
+2026-07-09 17:03:06,823 large   n= 163  Full GS@1=66.26 R@1=25.77 | w/o FOE GS@1=56.44 R@1=22.09 | delta GS@1=+9.82 R@1=+3.68
+2026-07-09 17:03:06,897 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 17:03:06,898 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 19:47:25,121 device=cuda:0 experiments=['size']
+2026-07-09 19:47:25,122 device=cuda:0 experiments=['size']
+2026-07-09 19:47:25,912 [object_core] injected test (6684/6684)
+2026-07-09 19:47:25,912 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 19:47:25,913 [object_core] injected test (6684/6684)
+2026-07-09 19:47:25,913 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 19:47:34,174 Loaded 1947 image features.
+2026-07-09 19:47:34,175 Loaded 1947 image features.
+2026-07-09 19:48:00,403 ViT frozen.
+2026-07-09 19:48:00,514 ViT frozen.
+2026-07-09 19:48:05,871 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 19:48:05,919 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 19:48:09,146 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 19:48:09,215 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 19:48:09,296 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 19:48:09,338 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 19:48:24,848 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 19:48:24,958 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 20:00:31,965 
+2026-07-09 20:00:31,966 ==== FOE object-size buckets ====
+2026-07-09 20:00:31,966 size rule: area_mode=hard, bucket_mode=two, mask_th=0.500, small<0.400, large>=0.300
+2026-07-09 20:00:31,966 small   n=4741  Full GS@1=65.30 R@1=28.94 | w/o FOE GS@1=59.40 R@1=24.85 | delta GS@1=+5.91 R@1=+4.09
+2026-07-09 20:00:31,966 non_small n= 533  Full GS@1=74.30 R@1=35.08 | w/o FOE GS@1=64.17 R@1=28.52 | delta GS@1=+10.13 R@1=+6.57
+2026-07-09 20:00:32,035 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 20:00:32,036 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 20:00:36,389 
+2026-07-09 20:00:36,390 ==== FOE object-size buckets ====
+2026-07-09 20:00:36,390 size rule: area_mode=hard, bucket_mode=two, mask_th=0.500, small<0.300, large>=0.300
+2026-07-09 20:00:36,390 small   n=4413  Full GS@1=64.56 R@1=27.94 | w/o FOE GS@1=58.78 R@1=24.20 | delta GS@1=+5.78 R@1=+3.74
+2026-07-09 20:00:36,390 non_small n= 861  Full GS@1=74.68 R@1=37.86 | w/o FOE GS@1=65.51 R@1=30.43 | delta GS@1=+9.18 R@1=+7.43
+2026-07-09 20:00:36,458 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 20:00:36,458 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 20:23:58,282 device=cuda:0 experiments=['size']
+2026-07-09 20:23:58,956 [object_core] injected test (6684/6684)
+2026-07-09 20:23:58,957 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 20:24:00,790 Loaded 1947 image features.
+2026-07-09 20:24:21,026 ViT frozen.
+2026-07-09 20:24:23,316 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 20:24:24,212 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 20:24:24,247 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 20:24:27,498 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 20:28:33,731 
+2026-07-09 20:28:33,732 ==== FOE object-size buckets ====
+2026-07-09 20:28:33,732 size rule: area_mode=hard, bucket_mode=two, mask_th=0.500, small<0.400, large>=0.300
+2026-07-09 20:28:33,732 small   n=4741  Full GS@1=65.30 R@1=28.94 | w/o FOE GS@1=59.40 R@1=24.85 | delta GS@1=+5.91 R@1=+4.09
+2026-07-09 20:28:33,732 non_small n= 533  Full GS@1=74.30 R@1=35.08 | w/o FOE GS@1=64.17 R@1=28.52 | delta GS@1=+10.13 R@1=+6.57
+2026-07-09 20:28:33,798 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json
+2026-07-09 20:28:33,799 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments
+2026-07-09 20:46:04,400 device=cuda:0 experiments=['action']
+2026-07-09 20:46:04,969 [object_core] injected test (6684/6684)
+2026-07-09 20:46:04,969 Loading features from features/CustomCIRR/test_images.pt
+2026-07-09 20:46:06,731 Loaded 1947 image features.
+2026-07-09 20:46:25,650 ViT frozen.
+2026-07-09 20:46:27,933 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-09 20:46:28,969 load checkpoint from weight/blip2_pretrained.pth
+2026-07-09 20:46:29,009 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-09 20:46:32,036 Loaded checkpoint: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/best_arithmetic.pth
+2026-07-09 20:54:37,430 
+2026-07-09 20:54:37,430 ==== Action perturbation on changed Add/Remove subset ====
+2026-07-09 20:54:37,430 subset n=5456
+2026-07-09 20:54:37,430 tag                          R@1     R@5    R@10    R@50    GS@1    GS@2    GS@3
+2026-07-09 20:54:38,217 full                       30.90   62.26   75.75   96.33   67.72   86.20   93.97
+2026-07-09 20:54:38,931 swap_graph_only            31.05   61.73   74.91   96.33   67.63   85.87   93.68
+2026-07-09 20:54:39,738 swap_text_graph            16.70   40.05   54.95   88.58   46.32   68.57   82.29
+2026-07-09 20:54:40,456 action_shuffle             30.98   62.26   75.73   96.30   67.72   86.02   93.86
+2026-07-09 20:54:40,456 
+2026-07-09 20:54:40,456 ==== Add/Remove text+graph swap delta ====
+2026-07-09 20:54:40,456 subset n=5456 | full GS@1=67.72 R@1=30.90 | Add<->Remove text+graph swap GS@1=46.32 R@1=16.70 | delta GS@1=-21.41 R@1=-14.20
+2026-07-09 20:54:40,458 Saved logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/action_perturb_CustomCIRR_test.json
+2026-07-09 20:54:40,459 Done. Output directory: logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments

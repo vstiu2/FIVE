@@ -1,0 +1,60 @@
+{
+  "collected_date": "2026-10-21",
+  "base_repository_commit": "214643f2d6025ba06ebd235a948f83b58e83c7bc",
+  "files": [
+    {
+      "remote_path": "/root/autodl-tmp/data/lj/FIVE/src/SSN_v9/motivation_experiments/__init__.py",
+      "repository_path": "src/SSN_v9/motivation_experiments/__init__.py",
+      "source_sha256": "03b3d2eb70f061ad1daec3c6e1bcf437f759055d2ffce6a1648d88ca3aa08645",
+      "bytes": 52,
+      "published_sha256": "03b3d2eb70f061ad1daec3c6e1bcf437f759055d2ffce6a1648d88ca3aa08645"
+    },
+    {
+      "remote_path": "/root/autodl-tmp/data/lj/FIVE/src/SSN_v9/motivation_experiments/run_motivation_experiments.py",
+      "repository_path": "src/SSN_v9/motivation_experiments/run_motivation_experiments.py",
+      "source_sha256": "70af15dca629874f1040b38f24b56c19cce371e87b06a3b3f874f4e68d73f05a",
+      "bytes": 34361,
+      "published_sha256": "bd538e5cfc68919c32861da4b89a45f8197db4f24d4423751af1127a97505ec5"
+    },
+    {
+      "remote_path": "/root/autodl-tmp/data/lj/SSN_v1/logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/action_perturb_CustomCIRR_test.json",
+      "repository_path": "experiments/motivation/records/CustomCIRR_test/action_perturb_CustomCIRR_test.json",
+      "source_sha256": "1eb83ab1fd80917304ef4c51d6180209870a31cd96b080afb5038a5df6d61380",
+      "bytes": 8490,
+      "published_sha256": "1eb83ab1fd80917304ef4c51d6180209870a31cd96b080afb5038a5df6d61380"
+    },
+    {
+      "remote_path": "/root/autodl-tmp/data/lj/SSN_v1/logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/motivation_experiments.log",
+      "repository_path": "experiments/motivation/records/CustomCIRR_test/motivation_experiments.log",
+      "source_sha256": "43c6be899261f8af33fc395a890814f4920cf50d518aded74de275a2a4775177",
+      "bytes": 31357,
+      "published_sha256": "43c6be899261f8af33fc395a890814f4920cf50d518aded74de275a2a4775177"
+    },
+    {
+      "remote_path": "/root/autodl-tmp/data/lj/SSN_v1/logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/shortcut_CustomCIRR_test.json",
+      "repository_path": "experiments/motivation/records/CustomCIRR_test/shortcut_CustomCIRR_test.json",
+      "source_sha256": "8cc558c813a04420b2daea9ce2f2b26e2f86160fb2bc4578fda6217930d72297",
+      "bytes": 4054,
+      "published_sha256": "8cc558c813a04420b2daea9ce2f2b26e2f86160fb2bc4578fda6217930d72297"
+    },
+    {
+      "remote_path": "/root/autodl-tmp/data/lj/SSN_v1/logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test.json",
+      "repository_path": "experiments/motivation/records/CustomCIRR_test/size_buckets_CustomCIRR_test.json",
+      "source_sha256": "0d1d9fd0e3753519e7447da0888ab8575e784f0ca52229c63fa4e71ce4034e31",
+      "bytes": 1026561,
+      "published_sha256": "0d1d9fd0e3753519e7447da0888ab8575e784f0ca52229c63fa4e71ce4034e31"
+    },
+    {
+      "remote_path": "/root/autodl-tmp/data/lj/SSN_v1/logs/SSN_BLIP2/CustomCIRR/ssn_v9/runA/motivation_experiments/size_buckets_CustomCIRR_test_0.3.json",
+      "repository_path": "experiments/motivation/records/CustomCIRR_test/size_buckets_CustomCIRR_test_0.3.json",
+      "source_sha256": "4aa9241984ba82b429946918af25ce92b02bd3d7c34fbf73c78d79e76eb498c6",
+      "bytes": 1026566,
+      "published_sha256": "4aa9241984ba82b429946918af25ce92b02bd3d7c34fbf73c78d79e76eb498c6"
+    }
+  ],
+  "packaging_changes": [
+    "Added FIVE_BLIP2_PRETRAINED environment path override; corrected action-experiment module description.",
+    "Added tools/run_motivation.py to reuse released resource-path configuration."
+  ],
+  "historical_provenance": "Server source tree has no Git metadata. Available source and logs are archived; exact training-time code/data identity was not established."
+}

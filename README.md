@@ -170,3 +170,7 @@ Third-party copyright headers are retained. LAVIS's BSD 3-Clause license is incl
 ## Parameter sensitivity records
 
 Configurations, seeds, original training histories, validation results, code snapshots, data checksums and storage accounting are archived in [experiments/sensitivity](experiments/sensitivity/README.md). Trained sweep weights are not included.
+
+## Motivation experiments
+
+Recorded PatternCIRRS test results for reference dependence, action perturbation and object-size buckets, with original JSON/logs and reproduction commands, are organized in [experiments/motivation](experiments/motivation/README.md). These checks reuse the main v9 checkpoint; no separate motivation weights are required.
