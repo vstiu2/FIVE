@@ -39,3 +39,7 @@ logs/
 outputs/
 *.part
 download_manifest.json
+
+# Track lightweight experiment records; nested archive rules still exclude weights.
+!experiments/sensitivity/runs/
+!experiments/sensitivity/runs/**

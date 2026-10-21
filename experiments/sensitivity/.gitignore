@@ -1,0 +1,7 @@
+# Only lightweight records and source snapshots belong in this archive.
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+__pycache__/

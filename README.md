@@ -166,3 +166,7 @@ The original checkpoint names were `CustomCIRR/ssn_v9/runA/best_arithmetic.pth` 
 Model forward computation, the training objectives and the original retrieval metric calculations are retained. Packaging changes add configurable dataset/asset paths, an evaluation output directory, launch/resource checks, and the separately named table Mean. See `docs/VALIDATION.md` for the checks performed on this release.
 
 Third-party copyright headers are retained. LAVIS's BSD 3-Clause license is included in `licenses/LAVIS-LICENSE.txt`; see `THIRD_PARTY.md` for upstream attribution. No new license is assigned here to the original FIVE research code.
+
+## Parameter sensitivity records
+
+Configurations, seeds, original training histories, validation results, code snapshots, data checksums and storage accounting are archived in [experiments/sensitivity](experiments/sensitivity/README.md). Trained sweep weights are not included.

@@ -1,0 +1,108 @@
+{
+  "snapshot_date": "2026-10-21",
+  "scope": "Current source-server data snapshot; historical training-time identity is not independently established.",
+  "files": [
+    {
+      "logical_path": "annotations/CustomCIRR_graph/normalization_report.json",
+      "bytes": 411,
+      "sha256": "7d984be6995da18c64560d63a925045fa8a5ab308d1a74950c0af247591c4a6a",
+      "mtime_utc": "2026-04-27T14:18:27.311758+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/test/test_query_text_with_graph.json",
+      "bytes": 16336060,
+      "sha256": "0255737cf742123d1a31e2b1ed9e1ecc66de3d90cd5a99c9930c91400c5dd9bb",
+      "mtime_utc": "2026-04-27T14:18:27.287758+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/test/test_query_text_with_graph_object_core.json",
+      "bytes": 12740549,
+      "sha256": "a3266eb26cb0f596557080cf02310a161cf783af4416cdf1f20d755d92fd6ca4",
+      "mtime_utc": "2026-06-22T14:41:13.434128+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/test/test_split_image.json",
+      "bytes": 189440,
+      "sha256": "9f3da5e92bbf0455b22f5cf192d3e845889f1e3adb80dee836220750338e1409",
+      "mtime_utc": "2026-04-27T14:19:31.139196+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/train/train_query_text_with_graph.json",
+      "bytes": 18422724,
+      "sha256": "109a0bf01d98234eb318ee0cfc02d9e333e074259b2b4dee8c9720271763c2c9",
+      "mtime_utc": "2026-04-18T14:55:01.924882+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/train/train_query_text_with_graph_object_core.json",
+      "bytes": 14412254,
+      "sha256": "3ae191bec5bdb0278d864aaac2f705ccc60cc57f2ab693fdeaf10b04f36cd7c6",
+      "mtime_utc": "2026-06-22T14:40:28.465976+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/train/train_split_image.json",
+      "bytes": 299087,
+      "sha256": "fb444f2add9885dacc9412e5ae44e80aa27fe6ae56b5d1812201e60503364b1c",
+      "mtime_utc": "2026-04-21T05:30:51.141057+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/val/val_query_text_with_graph.json",
+      "bytes": 7706734,
+      "sha256": "5aac35cd3d6bd953a945f8a7d99a2b9b79042a1296d0f146b1023cf20746f22d",
+      "mtime_utc": "2026-05-20T13:06:31.762230+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/val/val_query_text_with_graph_object_core.json",
+      "bytes": 6007573,
+      "sha256": "bc6aa182dc5f96f2731b27d0cf2d9cb2831a7a8c1af57601dff2a2e3881470fd",
+      "mtime_utc": "2026-06-22T14:40:43.062025+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/val/val_query_text_with_graph_overpass_parking_ferry.json",
+      "bytes": 1307291,
+      "sha256": "53b78e9044aa7e295cb3188fed0868fadbb789286255317dace89e8b34626d55",
+      "mtime_utc": "2026-05-20T13:04:28.593754+00:00"
+    },
+    {
+      "logical_path": "annotations/CustomCIRR_graph/val/val_split_image.json",
+      "bytes": 98102,
+      "sha256": "2ef901987593b98fd529ae2be13f638218b09ae32f200c5ab1120927fe73012d",
+      "mtime_utc": "2026-05-20T13:15:50.952030+00:00"
+    },
+    {
+      "logical_path": "features/CustomCIRR/test_images.pt",
+      "bytes": 2818135733,
+      "sha256": "f36b05fb63e9b4230ab0ca613edefbbc182f13d92f6a909078786760db494dea",
+      "mtime_utc": "2026-05-15T06:50:35.001553+00:00"
+    },
+    {
+      "logical_path": "features/CustomCIRR/test_name_to_idx.json",
+      "bytes": 196116,
+      "sha256": "adffff81ec4e03effc7004a92e0fe26917e89f0e86c5e048b34960a863b56c90",
+      "mtime_utc": "2026-05-15T06:50:35.013553+00:00"
+    },
+    {
+      "logical_path": "features/CustomCIRR/train_images.pt",
+      "bytes": 4439250665,
+      "sha256": "2cb35c46c7dfd383426fa0464deb4419104c475c976cbbde31ec278de6bca9ea",
+      "mtime_utc": "2026-05-15T06:50:46.921614+00:00"
+    },
+    {
+      "logical_path": "features/CustomCIRR/train_name_to_idx.json",
+      "bytes": 310243,
+      "sha256": "88a26549525d438d141cd0302c26eeacb83f6212f7424f8c74acc49f0ff77d5c",
+      "mtime_utc": "2026-05-15T06:50:46.941614+00:00"
+    },
+    {
+      "logical_path": "features/CustomCIRR/val_images.pt",
+      "bytes": 1486505643,
+      "sha256": "0643c8b2e67d3a40d87d3d0d8e584be56dc250680352c52b6032635b775ae70d",
+      "mtime_utc": "2026-05-20T13:23:21.273266+00:00"
+    },
+    {
+      "logical_path": "features/CustomCIRR/val_name_to_idx.json",
+      "bytes": 101098,
+      "sha256": "e50484b8bb352c217a2480ca0e0629e38e9c3abe7ed5d77b98f8f665c34c3f9b",
+      "mtime_utc": "2026-05-20T13:23:24.533274+00:00"
+    }
+  ]
+}

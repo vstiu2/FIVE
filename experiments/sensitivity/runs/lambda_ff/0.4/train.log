@@ -1,0 +1,154 @@
+2026-07-19 09:26:35,464 ViT frozen.
+2026-07-19 09:26:36,677 loaded ObjectLocalizer from /data/lj/SSN_v1/weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-19 09:26:37,389 load checkpoint from weight/blip2_pretrained.pth
+2026-07-19 09:26:37,394 Loaded BLIP2 pretrained weights from weight/blip2_pretrained.pth
+2026-07-19 09:26:38,171 [v9] train: injected object_core into 7615/7615
+2026-07-19 09:26:38,212 [v9] val: injected object_core into 3173/3173
+2026-07-19 09:26:38,212 Loading features from /data/lj/TME_v1/features/CustomCIRR/train_images.pt
+2026-07-19 09:26:40,286 Loaded 3067 image features.
+2026-07-19 09:26:40,286 Loading features from /data/lj/TME_v1/features/CustomCIRR/val_images.pt
+2026-07-19 09:26:40,981 Loaded 1027 image features.
+2026-07-19 09:26:40,987 Param groups: pretrained=186,703,932  new=28,706,955
+2026-07-19 09:26:40,995 [v9-stage] epoch=0 entering stage1 (mask_w=1.0, kl_w=0.1)
+2026-07-19 09:27:37,211 [1/35] warm=True stage1  l_main=1.5048  l_aux=0.0000  l_group=1.6226  l_align=0.0043  l_global=0.0000  l_colbert=0.0000  loss=1.6687  gamma=0.0500  lr=7.58e-06
+2026-07-19 09:27:48,533 Epoch 1  R@1=14.59  R@5=39.33  R@10=56.82  R@50=95.68  acc=51.61  GS@1=36.68  GS@2=61.27  GS@3=78.66  best_score=47.13
+2026-07-19 09:27:48,534 Epoch 1  arithmetic=54.7206
+2026-07-19 09:27:51,155 Saved best_arithmetic.pth  (arith=54.7206)
+2026-07-19 09:28:49,919 [2/35] warm=True stage1  l_main=0.9826  l_aux=0.0000  l_group=1.3822  l_align=0.0037  l_global=0.0000  l_colbert=0.0000  loss=1.1223  gamma=0.0500  lr=9.99e-06
+2026-07-19 09:29:01,210 Epoch 2  R@1=23.16  R@5=56.16  R@10=72.49  R@50=98.68  acc=62.62  GS@1=51.21  GS@2=74.25  GS@3=87.24  best_score=59.20
+2026-07-19 09:29:01,210 Epoch 2  arithmetic=66.1699
+2026-07-19 09:29:04,760 Saved best_arithmetic.pth  (arith=66.1699)
+2026-07-19 09:30:01,708 [3/35] warm=True stage1  l_main=0.7494  l_aux=0.0000  l_group=1.2214  l_align=0.0036  l_global=0.0000  l_colbert=0.0000  loss=0.8730  gamma=0.0500  lr=9.95e-06
+2026-07-19 09:30:12,475 Epoch 3  R@1=26.25  R@5=59.72  R@10=75.76  R@50=99.09  acc=65.21  GS@1=55.18  GS@2=76.49  GS@3=88.97  best_score=62.20
+2026-07-19 09:30:12,476 Epoch 3  arithmetic=68.7812
+2026-07-19 09:30:18,601 Saved best_arithmetic.pth  (arith=68.7812)
+2026-07-19 09:33:25,883 [4/35] warm=False stage1  l_main=0.6650  l_aux=1.9078  l_group=1.1771  l_kl_action=1.5107  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0038  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5042  alpha_inject=0.2001  loss=3.4554  l_trans_align=0.9212  l_fl=3.9618  l_ff=3.6488  gamma=0.0500  lr=9.86e-06
+2026-07-19 09:33:51,982 Epoch 4  R@1=28.49  R@5=61.33  R@10=76.80  R@50=98.93  acc=66.39  GS@1=57.67  GS@2=78.92  GS@3=89.35  best_score=63.77
+2026-07-19 09:33:51,982 Epoch 4  arithmetic=70.2130
+2026-07-19 09:33:55,897 Saved best_arithmetic.pth  (arith=70.2130)
+2026-07-19 09:37:13,276 [5/35] warm=False stage1  l_main=0.6071  l_aux=0.3611  l_group=1.1192  l_kl_action=1.6084  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0041  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7000  alpha_inject=0.2004  loss=2.4592  l_trans_align=0.8757  l_fl=3.0686  l_ff=2.6873  gamma=0.0500  lr=9.73e-06
+2026-07-19 09:37:39,098 Epoch 5  R@1=27.58  R@5=62.37  R@10=77.56  R@50=99.02  acc=66.63  GS@1=57.36  GS@2=78.44  GS@3=89.73  best_score=63.85
+2026-07-19 09:37:39,098 Epoch 5  arithmetic=70.2940
+2026-07-19 09:37:45,104 Saved best_arithmetic.pth  (arith=70.2940)
+2026-07-19 09:40:53,334 [6/35] warm=False stage1  l_main=0.5276  l_aux=0.1442  l_group=1.0738  l_kl_action=1.7482  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0050  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.8425  alpha_inject=0.2006  loss=2.0604  l_trans_align=0.8683  l_fl=2.6160  l_ff=2.1421  gamma=0.0500  lr=9.56e-06
+2026-07-19 09:41:17,378 Epoch 6  R@1=29.03  R@5=63.32  R@10=78.70  R@50=98.99  acc=67.51  GS@1=59.09  GS@2=80.02  GS@3=90.64  best_score=64.98
+2026-07-19 09:41:17,378 Epoch 6  arithmetic=71.3971
+2026-07-19 09:41:20,200 Saved best_arithmetic.pth  (arith=71.3971)
+2026-07-19 09:44:39,553 [7/35] warm=False stage1  l_main=0.4850  l_aux=0.0961  l_group=1.0466  l_kl_action=1.8115  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0054  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7920  alpha_inject=0.2007  loss=1.8561  l_trans_align=0.8738  l_fl=2.3686  l_ff=1.8251  gamma=0.0500  lr=9.35e-06
+2026-07-19 09:45:04,353 Epoch 7  R@1=30.07  R@5=64.23  R@10=79.92  R@50=99.09  acc=68.33  GS@1=61.27  GS@2=82.29  GS@3=91.59  best_score=66.21
+2026-07-19 09:45:04,353 Epoch 7  arithmetic=72.6352
+2026-07-19 09:45:14,118 Saved best_arithmetic.pth  (arith=72.6352)
+2026-07-19 09:48:22,367 [8/35] warm=False stage1  l_main=0.4364  l_aux=0.0682  l_group=1.0214  l_kl_action=1.8876  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0056  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7425  alpha_inject=0.2008  loss=1.7340  l_trans_align=0.8760  l_fl=2.2359  l_ff=1.6821  gamma=0.0501  lr=9.10e-06
+2026-07-19 09:48:46,166 Epoch 8  R@1=30.29  R@5=65.24  R@10=80.11  R@50=99.02  acc=68.67  GS@1=61.27  GS@2=81.47  GS@3=91.71  best_score=66.45
+2026-07-19 09:48:46,166 Epoch 8  arithmetic=72.7297
+2026-07-19 09:48:49,849 Saved best_arithmetic.pth  (arith=72.7297)
+2026-07-19 09:52:06,016 [9/35] warm=False stage1  l_main=0.4005  l_aux=0.0599  l_group=0.9979  l_kl_action=1.9665  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0057  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7235  alpha_inject=0.2010  loss=1.6459  l_trans_align=0.8732  l_fl=2.1332  l_ff=1.5702  gamma=0.0501  lr=8.81e-06
+2026-07-19 09:52:30,715 Epoch 9  R@1=31.71  R@5=66.12  R@10=80.33  R@50=98.74  acc=69.22  GS@1=62.43  GS@2=82.54  GS@3=91.71  best_score=67.19
+2026-07-19 09:52:30,715 Epoch 9  arithmetic=73.3691
+2026-07-19 09:52:34,343 Saved best_arithmetic.pth  (arith=73.3691)
+2026-07-19 09:55:48,551 [10/35] warm=False stage1  l_main=0.3767  l_aux=0.0493  l_group=0.9790  l_kl_action=2.0077  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0056  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7109  alpha_inject=0.2011  loss=1.5819  l_trans_align=0.8741  l_fl=2.0536  l_ff=1.4918  gamma=0.0501  lr=8.49e-06
+2026-07-19 09:56:12,261 Epoch 10  R@1=31.58  R@5=65.58  R@10=80.33  R@50=98.83  acc=69.08  GS@1=62.40  GS@2=82.45  GS@3=91.81  best_score=67.08
+2026-07-19 09:56:12,261 Epoch 10  arithmetic=73.2835
+2026-07-19 09:56:12,261 Early stopping counter: 1/7 (best=73.3691)
+2026-07-19 09:59:31,650 [11/35] warm=False stage1  l_main=0.3486  l_aux=0.0446  l_group=0.9626  l_kl_action=1.9676  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0054  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7071  alpha_inject=0.2012  loss=1.5173  l_trans_align=0.8647  l_fl=2.0187  l_ff=1.4295  gamma=0.0501  lr=8.14e-06
+2026-07-19 09:59:57,062 Epoch 11  R@1=31.77  R@5=65.84  R@10=80.81  R@50=98.61  acc=69.26  GS@1=62.43  GS@2=82.86  GS@3=92.59  best_score=67.21
+2026-07-19 09:59:57,062 Epoch 11  arithmetic=73.5581
+2026-07-19 09:59:59,986 Saved best_arithmetic.pth  (arith=73.5581)
+2026-07-19 10:03:07,780 [12/35] warm=False stage1  l_main=0.3228  l_aux=0.0380  l_group=0.9182  l_kl_action=1.7398  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0055  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7042  alpha_inject=0.2013  loss=1.4433  l_trans_align=0.8642  l_fl=2.0047  l_ff=1.3854  gamma=0.0501  lr=7.76e-06
+2026-07-19 10:03:32,694 Epoch 12  R@1=32.02  R@5=65.21  R@10=80.71  R@50=98.33  acc=69.07  GS@1=63.16  GS@2=82.54  GS@3=92.47  best_score=67.29
+2026-07-19 10:03:32,695 Epoch 12  arithmetic=73.4906
+2026-07-19 10:03:32,695 Early stopping counter: 1/7 (best=73.5581)
+2026-07-19 10:07:09,324 [13/35] warm=False stage1  l_main=0.3034  l_aux=0.0368  l_group=0.8932  l_kl_action=1.5646  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0054  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.7021  alpha_inject=0.2014  loss=1.3729  l_trans_align=0.8591  l_fl=1.9342  l_ff=1.3281  gamma=0.0501  lr=7.36e-06
+2026-07-19 10:07:34,993 Epoch 13  R@1=32.65  R@5=65.05  R@10=80.14  R@50=98.14  acc=69.00  GS@1=63.35  GS@2=83.27  GS@3=92.47  best_score=67.30
+2026-07-19 10:07:34,994 Epoch 13  arithmetic=73.5807
+2026-07-19 10:07:41,371 Saved best_arithmetic.pth  (arith=73.5807)
+2026-07-19 10:11:22,239 [14/35] warm=False stage1  l_main=0.2861  l_aux=0.0358  l_group=0.8635  l_kl_action=1.4424  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0053  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.6769  alpha_inject=0.2014  loss=1.3121  l_trans_align=0.8594  l_fl=1.8974  l_ff=1.2672  gamma=0.0501  lr=6.94e-06
+2026-07-19 10:11:49,130 Epoch 14  R@1=33.15  R@5=65.71  R@10=80.21  R@50=97.70  acc=69.19  GS@1=64.67  GS@2=83.20  GS@3=93.00  best_score=67.84
+2026-07-19 10:11:49,131 Epoch 14  arithmetic=73.9498
+2026-07-19 10:11:52,885 Saved best_arithmetic.pth  (arith=73.9498)
+2026-07-19 10:15:17,425 [15/35] warm=False stage1  l_main=0.2691  l_aux=0.0327  l_group=0.8341  l_kl_action=1.3132  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0053  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.6642  alpha_inject=0.2015  loss=1.2648  l_trans_align=0.8589  l_fl=1.8751  l_ff=1.2390  gamma=0.0501  lr=6.50e-06
+2026-07-19 10:15:43,330 Epoch 15  R@1=32.52  R@5=63.91  R@10=79.39  R@50=97.10  acc=68.23  GS@1=63.60  GS@2=83.42  GS@3=92.91  best_score=66.84
+2026-07-19 10:15:43,331 Epoch 15  arithmetic=73.2655
+2026-07-19 10:15:43,331 Early stopping counter: 1/7 (best=73.9498)
+2026-07-19 10:19:24,402 [16/35] warm=False stage1  l_main=0.2534  l_aux=0.0280  l_group=0.8050  l_kl_action=1.1348  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0055  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.6427  alpha_inject=0.2015  loss=1.2112  l_trans_align=0.8581  l_fl=1.8505  l_ff=1.2057  gamma=0.0501  lr=6.04e-06
+2026-07-19 10:19:51,946 Epoch 16  R@1=33.06  R@5=64.48  R@10=79.45  R@50=97.04  acc=68.51  GS@1=64.20  GS@2=83.93  GS@3=93.07  best_score=67.21
+2026-07-19 10:19:51,946 Epoch 16  arithmetic=73.6032
+2026-07-19 10:19:51,946 Early stopping counter: 2/7 (best=73.9498)
+2026-07-19 10:23:26,168 [17/35] warm=False stage1  l_main=0.2233  l_aux=0.0271  l_group=0.7608  l_kl_action=0.8219  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0058  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.6051  alpha_inject=0.2015  loss=1.1264  l_trans_align=0.8608  l_fl=1.8167  l_ff=1.1667  gamma=0.0501  lr=5.58e-06
+2026-07-19 10:23:54,301 Epoch 17  R@1=33.03  R@5=63.76  R@10=79.70  R@50=97.20  acc=68.42  GS@1=63.66  GS@2=83.86  GS@3=93.13  best_score=66.99
+2026-07-19 10:23:54,301 Epoch 17  arithmetic=73.4771
+2026-07-19 10:23:54,301 Early stopping counter: 3/7 (best=73.9498)
+2026-07-19 10:27:23,075 [18/35] warm=False stage1  l_main=0.2191  l_aux=0.0298  l_group=0.7260  l_kl_action=0.5233  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5802  alpha_inject=0.2015  loss=1.0764  l_trans_align=0.8605  l_fl=1.8128  l_ff=1.1344  gamma=0.0501  lr=5.11e-06
+2026-07-19 10:27:51,046 Epoch 18  R@1=33.69  R@5=66.37  R@10=80.90  R@50=98.08  acc=69.76  GS@1=64.99  GS@2=84.02  GS@3=93.35  best_score=68.33
+2026-07-19 10:27:51,047 Epoch 18  arithmetic=74.4856
+2026-07-19 10:28:02,593 Saved best_arithmetic.pth  (arith=74.4856)
+2026-07-19 10:31:25,774 [19/35] warm=False stage1  l_main=0.1792  l_aux=0.0248  l_group=0.6724  l_kl_action=0.3561  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0061  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5669  alpha_inject=0.2015  loss=1.0010  l_trans_align=0.8643  l_fl=1.7891  l_ff=1.1094  gamma=0.0501  lr=4.64e-06
+2026-07-19 10:31:51,845 Epoch 19  R@1=33.97  R@5=66.75  R@10=81.69  R@50=98.58  acc=70.25  GS@1=64.39  GS@2=83.30  GS@3=93.00  best_score=68.49
+2026-07-19 10:31:51,846 Epoch 19  arithmetic=74.5261
+2026-07-19 10:31:58,628 Saved best_arithmetic.pth  (arith=74.5261)
+2026-07-19 10:35:40,200 [20/35] warm=False stage1  l_main=0.1620  l_aux=0.0204  l_group=0.6339  l_kl_action=0.2668  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0061  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5707  alpha_inject=0.2015  loss=0.9560  l_trans_align=0.8638  l_fl=1.7766  l_ff=1.0784  gamma=0.0501  lr=4.18e-06
+2026-07-19 10:36:06,598 Epoch 20  R@1=34.10  R@5=67.73  R@10=82.16  R@50=98.46  acc=70.61  GS@1=64.92  GS@2=84.08  GS@3=93.26  best_score=68.90
+2026-07-19 10:36:06,599 Epoch 20  arithmetic=74.9584
+2026-07-19 10:36:13,654 Saved best_arithmetic.pth  (arith=74.9584)
+2026-07-19 10:39:32,145 [21/35] warm=False stage1  l_main=0.1583  l_aux=0.0214  l_group=0.6112  l_kl_action=0.2336  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5682  alpha_inject=0.2016  loss=0.9418  l_trans_align=0.8615  l_fl=1.7536  l_ff=1.0718  gamma=0.0502  lr=3.72e-06
+2026-07-19 10:39:59,498 Epoch 21  R@1=33.94  R@5=67.32  R@10=82.07  R@50=98.74  acc=70.52  GS@1=65.14  GS@2=83.80  GS@3=93.38  best_score=68.90
+2026-07-19 10:39:59,499 Epoch 21  arithmetic=74.9133
+2026-07-19 10:39:59,499 Early stopping counter: 1/7 (best=74.9584)
+2026-07-19 10:43:17,342 [22/35] warm=False stage1  l_main=0.1402  l_aux=0.0189  l_group=0.5910  l_kl_action=0.2175  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0061  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5580  alpha_inject=0.2016  loss=0.9038  l_trans_align=0.8563  l_fl=1.7416  l_ff=1.0372  gamma=0.0502  lr=3.27e-06
+2026-07-19 10:43:42,940 Epoch 22  R@1=34.70  R@5=67.95  R@10=82.92  R@50=98.74  acc=71.08  GS@1=65.21  GS@2=83.74  GS@3=93.41  best_score=69.32
+2026-07-19 10:43:42,940 Epoch 22  arithmetic=75.2375
+2026-07-19 10:43:50,309 Saved best_arithmetic.pth  (arith=75.2375)
+2026-07-19 10:47:12,957 [23/35] warm=False stage1  l_main=0.1391  l_aux=0.0199  l_group=0.5644  l_kl_action=0.2012  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0061  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5644  alpha_inject=0.2016  loss=0.8969  l_trans_align=0.8551  l_fl=1.7291  l_ff=1.0359  gamma=0.0502  lr=2.84e-06
+2026-07-19 10:47:40,759 Epoch 23  R@1=34.51  R@5=68.01  R@10=82.54  R@50=98.74  acc=70.95  GS@1=65.99  GS@2=84.24  GS@3=93.29  best_score=69.46
+2026-07-19 10:47:40,760 Epoch 23  arithmetic=75.3320
+2026-07-19 10:47:44,285 Saved best_arithmetic.pth  (arith=75.3320)
+2026-07-19 10:51:11,445 [24/35] warm=False stage1  l_main=0.1328  l_aux=0.0205  l_group=0.5583  l_kl_action=0.1821  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0061  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5708  alpha_inject=0.2016  loss=0.8737  l_trans_align=0.8550  l_fl=1.7104  l_ff=1.0042  gamma=0.0502  lr=2.43e-06
+2026-07-19 10:51:38,545 Epoch 24  R@1=35.27  R@5=68.64  R@10=82.70  R@50=98.80  acc=71.35  GS@1=65.99  GS@2=84.37  GS@3=93.38  best_score=69.74
+2026-07-19 10:51:38,545 Epoch 24  arithmetic=75.5932
+2026-07-19 10:51:42,108 Saved best_arithmetic.pth  (arith=75.5932)
+2026-07-19 10:55:06,576 [25/35] warm=False stage1  l_main=0.1340  l_aux=0.0204  l_group=0.5558  l_kl_action=0.1417  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5707  alpha_inject=0.2016  loss=0.8657  l_trans_align=0.8535  l_fl=1.6993  l_ff=0.9954  gamma=0.0502  lr=2.04e-06
+2026-07-19 10:55:32,842 Epoch 25  R@1=34.26  R@5=68.45  R@10=82.98  R@50=98.87  acc=71.14  GS@1=65.58  GS@2=84.40  GS@3=92.94  best_score=69.47
+2026-07-19 10:55:32,843 Epoch 25  arithmetic=75.3546
+2026-07-19 10:55:32,843 Early stopping counter: 1/7 (best=75.5932)
+2026-07-19 10:55:32,844 [v9-stage] epoch=25 entering stage2 (mask_w=2.0, kl_w=0.05)
+2026-07-19 10:58:54,007 [26/35] warm=False stage2  l_main=0.1298  l_aux=0.0206  l_group=0.5326  l_kl_action=0.1642  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0061  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5747  alpha_inject=0.2016  loss=0.8518  l_trans_align=0.8535  l_fl=1.6966  l_ff=0.9923  gamma=0.0502  lr=1.67e-06
+2026-07-19 10:59:20,406 Epoch 26  R@1=34.07  R@5=67.79  R@10=82.41  R@50=98.46  acc=70.68  GS@1=66.21  GS@2=84.90  GS@3=93.22  best_score=69.34
+2026-07-19 10:59:20,407 Epoch 26  arithmetic=75.2960
+2026-07-19 10:59:20,407 Early stopping counter: 2/7 (best=75.5932)
+2026-07-19 11:02:39,055 [27/35] warm=False stage2  l_main=0.1233  l_aux=0.0215  l_group=0.5158  l_kl_action=0.1411  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0061  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5784  alpha_inject=0.2017  loss=0.8337  l_trans_align=0.8520  l_fl=1.6762  l_ff=0.9752  gamma=0.0502  lr=1.34e-06
+2026-07-19 11:03:05,242 Epoch 27  R@1=34.83  R@5=68.52  R@10=82.89  R@50=99.05  acc=71.32  GS@1=65.36  GS@2=84.87  GS@3=93.16  best_score=69.53
+2026-07-19 11:03:05,243 Epoch 27  arithmetic=75.5256
+2026-07-19 11:03:05,243 Early stopping counter: 3/7 (best=75.5932)
+2026-07-19 11:06:23,950 [28/35] warm=False stage2  l_main=0.1190  l_aux=0.0200  l_group=0.5162  l_kl_action=0.1706  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5776  alpha_inject=0.2017  loss=0.8369  l_trans_align=0.8513  l_fl=1.6797  l_ff=0.9906  gamma=0.0502  lr=1.04e-06
+2026-07-19 11:06:50,013 Epoch 28  R@1=34.92  R@5=68.70  R@10=83.11  R@50=98.99  acc=71.43  GS@1=65.40  GS@2=85.03  GS@3=93.48  best_score=69.62
+2026-07-19 11:06:50,014 Epoch 28  arithmetic=75.6607
+2026-07-19 11:06:53,099 Saved best_arithmetic.pth  (arith=75.6607)
+2026-07-19 11:10:14,821 [29/35] warm=False stage2  l_main=0.1164  l_aux=0.0208  l_group=0.5049  l_kl_action=0.1645  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5765  alpha_inject=0.2017  loss=0.8236  l_trans_align=0.8508  l_fl=1.6775  l_ff=0.9674  gamma=0.0502  lr=7.69e-07
+2026-07-19 11:10:40,476 Epoch 29  R@1=34.32  R@5=68.17  R@10=82.60  R@50=98.68  acc=70.94  GS@1=65.87  GS@2=84.84  GS@3=93.57  best_score=69.42
+2026-07-19 11:10:40,476 Epoch 29  arithmetic=75.4356
+2026-07-19 11:10:40,476 Early stopping counter: 1/7 (best=75.6607)
+2026-07-19 11:13:59,490 [30/35] warm=False stage2  l_main=0.1142  l_aux=0.0200  l_group=0.4935  l_kl_action=0.1394  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0059  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5783  alpha_inject=0.2017  loss=0.8163  l_trans_align=0.8496  l_fl=1.6625  l_ff=0.9656  gamma=0.0502  lr=5.38e-07
+2026-07-19 11:14:26,134 Epoch 30  R@1=34.67  R@5=68.58  R@10=83.14  R@50=98.80  acc=71.30  GS@1=66.25  GS@2=84.71  GS@3=93.41  best_score=69.78
+2026-07-19 11:14:26,134 Epoch 30  arithmetic=75.6517
+2026-07-19 11:14:26,134 Early stopping counter: 2/7 (best=75.6607)
+2026-07-19 11:17:41,357 [31/35] warm=False stage2  l_main=0.1103  l_aux=0.0196  l_group=0.4927  l_kl_action=0.1408  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5797  alpha_inject=0.2017  loss=0.7997  l_trans_align=0.8499  l_fl=1.6562  l_ff=0.9354  gamma=0.0502  lr=3.46e-07
+2026-07-19 11:18:06,596 Epoch 31  R@1=34.89  R@5=68.52  R@10=83.11  R@50=98.77  acc=71.32  GS@1=65.77  GS@2=84.71  GS@3=93.54  best_score=69.66
+2026-07-19 11:18:06,597 Epoch 31  arithmetic=75.6157
+2026-07-19 11:18:06,597 Early stopping counter: 3/7 (best=75.6607)
+2026-07-19 11:21:27,590 [32/35] warm=False stage2  l_main=0.1131  l_aux=0.0200  l_group=0.4941  l_kl_action=0.1589  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5824  alpha_inject=0.2017  loss=0.8077  l_trans_align=0.8498  l_fl=1.6419  l_ff=0.9492  gamma=0.0502  lr=1.95e-07
+2026-07-19 11:21:53,494 Epoch 32  R@1=34.79  R@5=68.42  R@10=83.27  R@50=98.80  acc=71.32  GS@1=66.03  GS@2=84.68  GS@3=93.51  best_score=69.73
+2026-07-19 11:21:53,494 Epoch 32  arithmetic=75.6427
+2026-07-19 11:21:53,494 Early stopping counter: 4/7 (best=75.6607)
+2026-07-19 11:25:11,446 [33/35] warm=False stage2  l_main=0.1125  l_aux=0.0201  l_group=0.4886  l_kl_action=0.1224  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5827  alpha_inject=0.2017  loss=0.8050  l_trans_align=0.8495  l_fl=1.6598  l_ff=0.9455  gamma=0.0502  lr=8.70e-08
+2026-07-19 11:25:36,933 Epoch 33  R@1=34.86  R@5=68.55  R@10=83.33  R@50=98.80  acc=71.38  GS@1=66.12  GS@2=84.65  GS@3=93.54  best_score=69.80
+2026-07-19 11:25:36,933 Epoch 33  arithmetic=75.6922
+2026-07-19 11:25:39,816 Saved best_arithmetic.pth  (arith=75.6922)
+2026-07-19 11:28:58,212 [34/35] warm=False stage2  l_main=0.1078  l_aux=0.0204  l_group=0.4906  l_kl_action=0.1238  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5814  alpha_inject=0.2017  loss=0.7967  l_trans_align=0.8497  l_fl=1.6458  l_ff=0.9389  gamma=0.0502  lr=2.16e-08
+2026-07-19 11:29:22,733 Epoch 34  R@1=34.92  R@5=68.55  R@10=83.20  R@50=98.80  acc=71.37  GS@1=66.12  GS@2=84.68  GS@3=93.54  best_score=69.79
+2026-07-19 11:29:22,734 Epoch 34  arithmetic=75.6877
+2026-07-19 11:29:22,734 Early stopping counter: 1/7 (best=75.6922)
+2026-07-19 11:32:37,130 [35/35] warm=False stage2  l_main=0.1073  l_aux=0.0186  l_group=0.4883  l_kl_action=0.1452  l_blend=0.0000  l_counterfact=0.0000  l_align=0.0060  l_global=0.0000  l_colbert=0.0000  m_act_mean=0.5810  alpha_inject=0.2017  loss=0.8006  l_trans_align=0.8494  l_fl=1.6609  l_ff=0.9455  gamma=0.0502  lr=1.16e-11
+2026-07-19 11:33:03,845 Epoch 35  R@1=34.92  R@5=68.58  R@10=83.23  R@50=98.80  acc=71.38  GS@1=66.15  GS@2=84.68  GS@3=93.54  best_score=69.81
+2026-07-19 11:33:03,846 Epoch 35  arithmetic=75.7012
+2026-07-19 11:33:07,218 Saved best_arithmetic.pth  (arith=75.7012)
+2026-07-19 11:33:11,422 Training done. best_arithmetic=75.7012

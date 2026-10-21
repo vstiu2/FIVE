@@ -1,0 +1,9 @@
+{
+  "archive_date": "2026-10-21",
+  "snapshot_content_sha256": "9445273ab06af78b1ccd253a22710a947484c045e8fc7926f76a110830bef186",
+  "published_main_reference_commit": "03d61c460436275b08fbd885a79e9b72634fc7f0",
+  "historical_run_git_commits": "not recorded in original experiment metadata",
+  "current_snapshot": "FFT-band support present; exact association with earlier training runs is not established",
+  "before_fft_patch": "Four backup files from fft_bands_20260724_215420; byte-identical to corresponding previously inventoried pre-FFT files",
+  "scope": "First-party source plus sweep scripts; vendored LAVIS remains in the repository root."
+}

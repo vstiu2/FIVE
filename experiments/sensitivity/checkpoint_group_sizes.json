@@ -1,0 +1,74 @@
+{
+  "fft_num_bands": {
+    "best_checkpoints": 4,
+    "best_GB": 11.371385952,
+    "other_checkpoints": 0,
+    "other_GB": 0.0,
+    "values": [
+      "2",
+      "6",
+      "8",
+      "10"
+    ]
+  },
+  "lambda_align": {
+    "best_checkpoints": 2,
+    "best_GB": 5.685692976,
+    "other_checkpoints": 0,
+    "other_GB": 0.0,
+    "values": [
+      "3.0",
+      "5.0"
+    ]
+  },
+  "lambda_ff": {
+    "best_checkpoints": 10,
+    "best_GB": 28.42846488,
+    "other_checkpoints": 0,
+    "other_GB": 0.0,
+    "values": [
+      "0",
+      "0.3",
+      "0.4",
+      "0.5",
+      "0.6",
+      "0.7",
+      "0.8",
+      "1.0",
+      "5.0",
+      "8.0"
+    ]
+  },
+  "lambda_fl": {
+    "best_checkpoints": 10,
+    "best_GB": 28.42846488,
+    "other_checkpoints": 0,
+    "other_GB": 0.0,
+    "values": [
+      "0.00",
+      "0.4",
+      "0.5",
+      "0.6",
+      "0.7",
+      "0.8",
+      "0.9",
+      "1.0",
+      "3.0",
+      "6.0"
+    ]
+  },
+  "lambda_trans_align": {
+    "best_checkpoints": 6,
+    "best_GB": 17.057078928,
+    "other_checkpoints": 3,
+    "other_GB": 8.528524509,
+    "values": [
+      "0.2",
+      "0.4",
+      "0.5",
+      "0.6",
+      "0.8",
+      "1"
+    ]
+  }
+}

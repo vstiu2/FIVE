@@ -1,0 +1,18 @@
+2026-07-20 02:56:27,592 ViT frozen.
+2026-07-20 02:56:28,834 loaded ObjectLocalizer from weight/selector_eva.pt (missing=0, unexpected=0)
+2026-07-20 02:56:29,599 load checkpoint from weight/blip2_pretrained.pth
+2026-07-20 02:56:31,778 Loaded checkpoint: /data/lj/FIVE/logs/SSN_BLIP2/CustomCIRR/ssn_v9_sensitivity/lambda_a/3.0/best_arithmetic.pth
+2026-07-20 02:56:31,873 Loading features from /data/lj/TME_v1/features/CustomCIRR/val_images.pt
+2026-07-20 02:56:32,662 Loaded 1027 image features.
+2026-07-20 02:56:58,297 
+{
+  "R@1": 35.644500472738734,
+  "R@5": 68.98833911125118,
+  "R@10": 82.94988969429562,
+  "R@50": 99.02300661834225,
+  "acc": 71.65143397415694,
+  "GS@1": 66.05735896627797,
+  "GS@2": 84.71478096438702,
+  "GS@3": 93.4762054837693
+}
+2026-07-20 02:56:58,297 Results saved to /data/lj/FIVE/logs/SSN_BLIP2/CustomCIRR/ssn_v9_sensitivity/lambda_a/3.0/test_results_val.json
